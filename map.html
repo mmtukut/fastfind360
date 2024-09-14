@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastFind360 - Mapping Nigeria’s Future</title>
+    <meta name="description" content="Explore Nigeria’s critical infrastructure with immersive 360-degree mapping technology. Search, explore, and analyze infrastructure data." />
+
+    <!-- Essential CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Loader Section -->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <!-- Loading Objects -->
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_four"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-dark text-white">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <a href="index.html" class="d-flex align-items-center">
+                    <img src="./assets/img/logo.png" alt="FastFind360 Logo" style="height: 40px;">
+                </a>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#challenge">Challenge</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <a class="btn btn-primary" href="#">Explore Maps</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Map Area -->
+    <main>
+        <div id="map" style="height: 80vh; width: 100%;"></div>
+        <div id="map-controls" class="position-absolute bg-light p-3" style="top: 10px; right: 10px; border-radius: 5px;">
+            <button id="zoom-in" class="btn btn-secondary mb-2">Zoom In</button>
+            <button id="zoom-out" class="btn btn-secondary mb-2">Zoom Out</button>
+            <div id="layer-controls" class="form-check">
+                <input type="checkbox" class="form-check-input" id="layer-hospitals">
+                <label class="form-check-label" for="layer-hospitals">Hospitals</label>
+                <br>
+                <input type="checkbox" class="form-check-input" id="layer-schools">
+                <label class="form-check-label" for="layer-schools">Schools</label>
+                <br>
+                <input type="checkbox" class="form-check-input" id="layer-roads">
+                <label class="form-check-label" for="layer-roads">Roads</label>
+            </div>
+        </div>
+    </main>
+
+    <!-- Info Box -->
+    <aside id="info-box" class="position-absolute bg-light p-3" style="width: 300px; top: 10px; left: 10px; border-radius: 5px;">
+        <h5>Location Details</h5>
+        <p id="location-info">Select a location to see details.</p>
+        <button id="360-tour" class="btn btn-primary">360° Tour</button>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <a href="#"><img src="./assets/img/logo.png" alt="FastFind360 Logo" style="height: 40px;"></a>
+                    <p class="mt-2">Your gateway to discovering Nigeria’s critical infrastructure. Join us in the 2024 Digital Nigeria Innovation Challenge.</p>
+                </div>
+                <div>
+                    <h5>Contact</h5>
+                    <p>Email: contact@fastfind360.ng</p>
+                    <p>Phone: +234-805-641-9040</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> <!-- Example for Google Maps API -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Initialize the map
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 9.0820, lng: 8.6753 }, // Center of Nigeria
+                zoom: 6
+            });
+
+            document.getElementById('zoom-in').addEventListener('click', function() {
+                var zoom = map.getZoom();
+                map.setZoom(zoom + 1);
+            });
+
+            document.getElementById('zoom-out').addEventListener('click', function() {
+                var zoom = map.getZoom();
+                map.setZoom(zoom - 1);
+            });
+
+            document.getElementById('layer-hospitals').addEventListener('change', function() {
+                // Toggle hospitals layer
+                toggleLayer('hospitals');
+            });
+
+            document.getElementById('layer-schools').addEventListener('change', function() {
+                // Toggle schools layer
+                toggleLayer('schools');
+            });
+
+            document.getElementById('layer-roads').addEventListener('change', function() {
+                // Toggle roads layer
+                toggleLayer('roads');
+            });
+
+            function toggleLayer(layerType) {
+                // Implement layer toggling logic here
+            }
+        }
+
+        // Call the initMap function when the page loads
+        window.onload = initMap;
+
+        // Hide loading screen after page load
+        window.addEventListener('load', function() {
+            document.getElementById('loading').style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
