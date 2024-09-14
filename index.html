@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastFind360 - Mapping Nigeria’s Future</title>
+    <meta name="description" content="Explore Nigeria’s critical infrastructure with immersive 360-degree mapping technology. Search, explore, and analyze infrastructure data." />
+
+    <!-- Essential CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+   <!-- Loader Section -->
+   <div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <!-- Loading Objects -->
+            <div class="object" id="object_one"></div>
+            <div class="object" id="object_two"></div>
+            <div class="object" id="object_three"></div>
+            <div class="object" id="object_four"></div>
+        </div>
+    </div>
+</div>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-transparent header-sticky">
+            <div class="header-main">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xxl-2 col-xl-3 col-lg-3 col-md-6 col-sm-4 col-6">
+                            <div class="sasup-logo mr-35 d-inline-block">
+                                <a class="logo-1" href="index.html">
+                                    <img alt="FastFind360 Logo" src="/assets/img/logo.png" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xxl-10 col-xl-9 col-lg-9 col-md-6 col-sm-8 col-6">
+                            <div class="text-end">
+                                <div class="sasup-header sasup-header-2 d-none d-lg-inline-block">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li><a href="index.html"><b>Home</b></a></li>
+                                            <li><a href="#about"><b>About</b></a></li>
+                                            <li><a href="#services"><b>Services</b></a></li>
+                                            <li><a href="#challenge"><b>Challenge</b></a></li>
+                                            <li><a href="#contact"><b>Contact</b></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="sasup-header-action-btn d-inline-block">
+                                    <a class="sasup-theme-btn ml-25 d-none d-sm-inline-block vertical-middle sasup-theme-btn-2" href="#"><span>Explore Maps</span></a>
+                                    <div class="mobile-bar-control d-inline-block d-lg-none">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    
+
+    <div class="sasup-slider-area p-rel mb-110">
+        <!-- Slider Shapes -->
+        <div class="slider-shapes-2 d-none d-md-block">
+          <div class="shape-1 shape-default">
+            <img alt="Shape 1" src="/assets/shape/3d-house.png" />
+          </div>
+          <div class="shape-2 shape-default">
+            <img alt="Shape 2" src="/assets/shape/road.png" />
+          </div>
+          <div class="shape-3 shape-default">
+            <img alt="Shape 3" src="/assets/shape/hospital-building.png" />
+          </div>
+          <div class="shape-4 shape-default">
+            <img alt="Shape 4" src="/assets/shape/line-testimonial.png" />
+          </div>
+        </div>
+      
+        <!-- Active Slider -->
+        <div class="sasup-slider-active">
+          <div class="sasup-single-slider pt-80 d-flex align-items-center sasup-slider-height-2" data-bg-color="#f2f3f8">
+            <div class="container p-rel">
+              <!-- Extra Slider Shapes -->
+              <div class="extra-slider-shape d-none d-xl-block">
+                <div class="shape-1">
+                  <img alt="Extra Shape 1" src="/assets/shape/triangle.png">
+                </div>
+                <div class="shape-2">
+                  <img alt="Extra Shape 2" src="/assets/shape/location.png"/>
+                </div>
+              </div>
+      
+              <!-- Slider Content -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="sasup-slider-content">
+                    <span class="sasup-slider-content-subtitle wow fadeInUp" data-wow-delay=".3s"><strong>WELCOME TO</strong> FastFind360</span>
+                    <h3 class="sasup-slider-content-title wow fadeInUp" data-wow-delay=".6s">Mapping Nigeria’s Critical Infrastructure</h3>
+                    <p class="sasup-slider-content-desc wow fadeInUp" data-wow-delay=".8s">Explore critical infrastructure such as hospitals, schools, roads, and utilities with 360° immersive maps.</p>
+                    <div class="sasup-slider-actions wow fadeInUp" data-wow-delay="1s">
+                      <a class="sasup-theme-btn-2 mr-15" href="#">Explore Maps</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xxl-5 col-xl-5  col-lg-6  col-md-6">
+                    <div class="slider-shapes p-rel slider-shape-space p-rel">
+                        <div class="shape-item shape-1">
+                            <div class="shape-inner">
+                                <img alt="Infrastructure Map" src="assets/img/digital_map_nigeria.avif" class="has-shadow-1" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    
+<!-- About Section -->
+<div class="video-area pb-150" id="about" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="row">
+            <div class="video-area-left">
+                <div class="row align-items-center">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                        <div class="section-title-2 mb-30 wow fadeInUp" data-wow-delay=".2s">
+                            <h3 class="s-title">ABOUT FASTFIND360</h3>
+                        </div>
+                        <div class="listing-feature-list mb-30 mb-lg-0">
+                            <p>FastFind360 is a cutting-edge platform designed to map and visualize critical infrastructure across Nigeria. Our immersive, data-driven platform helps users explore hospitals, schools, roads, and utilities with ease, promoting sustainable development and informed decision-making.</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                        <div class="text-lg-end">
+                            <div class="video-link-img text-start wow fadeInUp" data-wow-delay=".2s">
+                                <div class="fix">
+                                    <img alt="Infrastructure Mapping" class="img-fluid" src="/assets/img/gis-mapping.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Services Section -->
+    <div class="feature-area pt-100 pb-100" data-bg-color="#eeeff4" id="services" style="background-color: #ececec;">
+        <div class="container">
+            <div class="row mb-45">
+                <div class="col-xxl-12">
+                    <div class="section-title-2 text-center">
+                        <h3 class="s-title visile-br-lg">OUR SERVICES</h3>
+                        <p class="s-desc">Why Choose FastFind360</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="single-feature-2 mb-55 bg-white">
+                        <div class="icon-container">
+                            <img alt="360° Virtual Tours" src="/assets/icon/360.png">
+                        </div>
+                        <div class="feature-content-2">
+                            <h4 class="feature-content-title-2"><a href="#">360° Virtual Tours</a></h4>
+                            <p class="feature-content-desc-2">Explore properties and infrastructure in real-time with immersive 360-degree virtual tours.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="single-feature-2 mb-55 bg-white">
+                        <div class="icon-container">
+                            <img alt="AI Driven" src="/assets/icon/ai-technology.png" />
+                        </div>
+                        <div class="feature-content-2">
+                            <h4 class="feature-content-title-2"><a href="#">AI-Driven Insights</a></h4>
+                            <p class="feature-content-desc-2">Analyze trends and make data-driven decisions with powerful AI technology.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="single-feature-2 mb-55 bg-white">
+                        <div class="icon-container">
+                            <img alt="Secure Transactions" src="/assets/icon/geospatial-technology.png" />
+                        </div>
+                        <div class="feature-content-2">
+                            <h4 class="feature-content-title-2"><a href="#">GIS Mapping and Analytics</a></h4>
+                            <p class="feature-content-desc-2">Visualize critical infrastructure with cutting-edge GIS mapping tools.</p>
+                        </div>
+                    </div>
+                </div>  
+                              
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="single-feature-2 mb-55 bg-white">
+                        <div class="icon-container">
+                            <img alt="Secure Transactions" src="/assets/icon/all-in-one.png" />
+                        </div>
+                        <div class="feature-content-2">
+                            <h4 class="feature-content-title-2"><a href="#">All-in-One Platform</a></h4>
+                            <p class="feature-content-desc-2">  FastFind360 combines all essential infrastructure data into a single, seamless platform—no need to switch between apps or tools.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <!-- Call to Action -->
+<div class="cta-area cta-3-spacing pt-120 pb-110 mb-110 bg-default" id="partnership" style="position: relative; background-image: url('/assets/img/map.jpg'); background-size: cover; background-position: center;">
+    <!-- Dark Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+    
+    <!-- Content Section -->
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="cta-content">
+            <div class="row align-items-center">
+                <div class="col-xxl-6 col-xl-6 col-lg-8 col-md-8">
+                    <h2 class="cta-title wow fadeInUp" data-wow-delay=".2s">Become a Partner in Mapping Nigeria's Future</h2>
+                    <p class="cta-desc wow fadeInUp" data-wow-delay=".4s">  Partner with FastFind360 to contribute to Nigeria's digital transformation. Together, we can create a platform that provides unparalleled access to the country’s critical infrastructure data.
+                    </p>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-4 col-md-4">
+                    <div class="cta-action text-md-end">
+                        <a class="sasup-white-btn wow fadeInUp" data-wow-delay=".6s" href="#">Get Started Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer-area pt-90" data-bg-color="#eeeff4">
+        <div class="container pb-80 has-border-bottom">
+            <div class="footer-1">
+                <div class="row">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 order-last col-sm-12 order-lg-first">
+                        <div class="footer-widget wow fadeInUp mb-30 mb-lg-0" data-wow-delay=".2s">
+                            <div class="logo mb-20">
+                                <a href="#">
+                                    <img alt="FastFind360 Logo" src="/assets/img/logo.png" />
+                                </a>
+                            </div>
+                            <p class="widget-text">                 FastFind360 - Your gateway to discovering Nigeria’s critical infrastructure and properties. Join us as we participate in the 2024 Digital Nigeria Innovation Challenge and help shape Nigeria’s future with advanced GIS mapping and immersive 360° virtual experiences.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-8 col-xl-8 col-lg-8">
+                        <div class="row mb-30 mb-lg-0">
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                                <div class="footer-widget wow fadeInUp mb-30 mb-lg-0" data-wow-delay=".4s">
+                                    <h5>About</h5>
+                                    <ul>
+                                        <li><a href="#about">About Us</a></li>
+                                        <li><a href="#services">Services</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
+                                <div class="footer-widget mb-30 mb-lg-0">
+                                    <h5>Partnership</h5>
+                                    <ul>
+                                        <li><a href="#partnership">Become a Partner</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
+                                <div class="footer-widget">
+                                    <h5>Others</h5>
+                                    <ul>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="widget wow fadeInUp" data-wow-delay=".4s">
+                          <h4 class="widget-title">CONTACT</h4>
+                          <p class="widget-text">Email: contact@fastfind360.ng</p>
+                          <p class="widget-text">Phone: +234-805-641-9040</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+            // Hide loading screen after page load
+            window.addEventListener('load', function() {
+                document.getElementById('loading').style.display = 'none';
+            });
+    </script>
+</body>
+
+</html>
+
