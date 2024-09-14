@@ -4822,17 +4822,17 @@ input:-ms-input-placeholder {
   }
 }
 .sasup-slider-content-subtitle {
-  font-size: 14px;
-  color: #2f75ff;
+  font-size: 18px;
+  color: #02246a;
   text-transform: uppercase;
   line-height: 1;
   display: block;
   margin-bottom: 13px;
 }
 .sasup-slider-content-title {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 700;
-  color: #0a1426;
+  color: #123b87;
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -14937,3 +14937,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height: 100%;
   object-position: center; 
 }
+
