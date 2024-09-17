@@ -14938,3 +14938,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   object-position: center; 
 }
 
+#map {
+  height: 80vh;
+  width: 100%;
+}
+
+#menu {
+  position: static;
+  background: #efefef;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#info-box {
+  width: 300px;
+  top: 10px;
+  left: 10px;
+  border-radius: 5px;
+}
